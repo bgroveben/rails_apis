@@ -1,1 +1,1 @@
-Collection of RoR API's from Codecademy
+Collection of Ruby on Rails API's from Codecademy.
