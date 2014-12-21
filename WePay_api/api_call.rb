@@ -11,8 +11,7 @@ headers = {
 params  = {}  # Any parameters needed for the API call.
 url = URI.parse('https://stage.wepayapi.com/v2/user')  # URL of the call.
 call = Net::HTTP::Post.new(url.path, initheader = headers)
-call.add_field('Authorization: Bearer', 'STAGE_df1684a1c7b91f0de
-51b72e5890891b92d34e47fb3cb48d4dbd8d2a89fa253cc')
+call.add_field('Authorization: Bearer', 'ACCESS_TOKEN')
 call.body = params.to_json
 
 request = Net::HTTP.new(url.host, url.port)

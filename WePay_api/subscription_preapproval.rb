@@ -5,7 +5,7 @@ require 'wepay'
 # Credentials
 client_id = 'CLIENT_ID'
 client_secret = 'CLIENT_SECRET'
-access_token = 'STAGE_df1684a1c7b91f0de51b72e5890891b92d34e47fb3cb48d4dbd8d2a89fa253cc'
+access_token = 'ACCESS_TOKEN'
 
 wepay = WePay.new(client_id, client_secret)
 response = wepay.call('/preapproval/create', access_token, {
