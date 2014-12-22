@@ -1,4 +1,4 @@
-# Use HTTParty library to create a Ruby wrapper for part of the GitHub API.
+# Create a token, but specify the scopes that we need in the POST body.
 
 require 'httparty'
 require 'json'
@@ -15,6 +15,7 @@ class GitHub
 		endpoint = "https://api.github.com/authorizations"
 		post_body = {:client_id     => API_CLIENT_ID,
 								 :client_secret => API_CLIENT_SECRET
+								 :scopes        => ["repo:status"]
 		}
 		self.class.post endpoint, :body => post_body.to_json
 	end
