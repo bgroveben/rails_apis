@@ -5,7 +5,7 @@
 			"url"=>"https://api.github.com/authorizations/0000000",
 			"app"=> {
 					"name"=>"GitHub API",
-					"url"=>"http://developer.gihub.com/v3/oauth/#oauth-authorizations-api"
+					"url"=>"http://developer.github.com/v3/oauth/#oauth-authorizations-api"
 			},
 			"token"=>"TOKEN"
 			"note"=>nil,
